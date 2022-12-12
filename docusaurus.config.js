@@ -9,7 +9,7 @@ const config = {
   title: 'MobiNex',
   tagline: 'Device Sharing For Teams',
   url: 'https://mobinex.io',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
@@ -33,16 +33,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          routeBasePath: '/blog',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -84,11 +82,11 @@ const config = {
             items: [
               {
                 label: 'Graphical Interface',
-                to: '/docs/category/graphical-interface',
+                to: '/category/graphical-interface',
               },
               {
                 label: 'Command Line Interface',
-                to: '/docs/category/command-line-interface',
+                to: '/category/command-line-interface',
               }
             ],
           },
