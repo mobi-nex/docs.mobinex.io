@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MobiNex',
   tagline: 'Device Sharing For Teams',
-  url: 'https://mobinex.io',
+  url: 'https://docs-mobinex.netlify.app',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
