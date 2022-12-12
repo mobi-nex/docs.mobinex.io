@@ -1,0 +1,8 @@
+{
+  "label": "Command Line Interface",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "MobiNex core is controlled by a command line interface tool called AdbOrc"
+  }
+}
