@@ -84,11 +84,11 @@ const config = {
             items: [
               {
                 label: 'Graphical Interface',
-                to: '/category/graphical-interface',
+                to: '/docs/category/graphical-interface',
               },
               {
                 label: 'Command Line Interface',
-                to: '/category/command-line-interface',
+                to: '/docs/category/command-line-interface',
               }
             ],
           },
