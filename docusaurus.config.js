@@ -57,7 +57,7 @@ const config = {
           alt: 'MobiNex Logo',
           src: 'img/mobinex-light.png',
           srcDark: 'img/mobinex-dark.png',
-          href: '../',
+          href: 'https://mobinex.io',
         },
         items: [
           {
@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '../blog',
+                href: 'https://mobinex.io/blog',
               },
               {
                 label: 'GitHub',
