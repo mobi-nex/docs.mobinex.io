@@ -8,11 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MobiNex',
   tagline: 'Device Sharing For Teams',
-  url: 'https://docs-mobinex.netlify.app',
+  url: 'https://mobinex.io',
   baseUrl: '/docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.png',
+  favicon: '/img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -57,16 +57,15 @@ const config = {
           alt: 'MobiNex Logo',
           src: 'img/mobinex-light.png',
           srcDark: 'img/mobinex-dark.png',
-          href: 'https://mobinex.io',
+          href: '../',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Docs',
+          },
           {
             href: 'https://github.com/mobi-nex/docs.mobinex.io',
             label: 'GitHub',
@@ -82,38 +81,38 @@ const config = {
             items: [
               {
                 label: 'Graphical Interface',
-                to: '/category/graphical-interface',
+                to: '/category/swapmeet-gui',
               },
               {
                 label: 'Command Line Interface',
-                to: '/category/command-line-interface',
+                to: '/category/adborc-cli',
               }
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
+          // },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Blog',
+                to: '../blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/mobi-nex/',

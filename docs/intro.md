@@ -5,44 +5,51 @@ sidebar_position: 1
 
 # Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## What is MobiNex?
 
-Get started by **creating a new site**.
+*MobiNex* is a platform that allows you to easily create a pseudo-distributed network of android devices and
+share them with other users on the network. It can be used for setting up remote testing and development
+environments for your engineering team. It can also be used for setting up an in-house testing farm or
+a [virtual device lab](https://mobinex.io/blog/why-setup-a-virtual-device-lab) for your organization.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+## How does it work?
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+A MobiNex network consists of one or more *Suppliers* and one or more *Consumers*. A Supplier node is a
+computer on the network that has one or more android devices attached to it. A Consumer node is a computer
+on the network that wants to use these supplied devices. This simple supplier-consumer model allows you
+to easily scale your network to any size and reduces the complexity of managing the devices while being
+fault tolerant to node failures and highly available.
 
-## Generate a new site
+## What does pseudo-distributed mean?
 
-Generate a new Docusaurus site using the **classic template**.
+In a MobiNex network, the devices are connected to *Supplier* nodes via USB. The Supplier nodes are
+connected to *Consumer* nodes via the *network*. When a Consumer wants to use a device, it *connects* to
+the Supplier that has the device attached to it. All device communication, after the connection, is
+completely distributed and peer-to-peer between the Consumer and the Supplier. In addition to
+Supplier and Consumer nodes, there is a central *MarketMaker* node that manages the network and acts
+as a proxy for the network. MarketMaker is responsible for the connection between Supplier and
+Consumer. It also handles all the metadata of the network. This means that the network is fault
+tolerant to Supplier and Consumer node failures, but it is not fault tolerant to MarketMaker node failure.
 
-The classic template will automatically be added to your project after you run the command:
+## How do I get started?
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+The MobiNex platform consists of two tools for setting up and managing the network:
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+1. [SwapMeet](/category/swapmeet-gui) - A desktop application for setting up and managing the network.
+2. [AdbOrc](/category/adborc-cli) - A command line tool for managing the network.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+You can use either of these tools to set up and manage your network. *SwapMeet* is recommended for
+setting up the network for the first time because it provides a simple and intuitive UI for managing
+the network. For advanced users, *AdbOrc* can be used to manage the network from the command line.
+It is also possible to use both tools together. AdbOrc is also the core of MobiNex
+and used by SwapMeet internally to manage the network. AdbOrc is open source and the source code is
+available on [GitHub](https://github.com/mobi-nex/adborc.git).
 
-## Start your site
 
-Run the development server:
+:::tip
 
-```bash
-cd my-website
-npm run start
-```
+Installing SwapMeet will also install AdbOrc on your system.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+:::

@@ -1,7 +1,8 @@
 {
-  "label": "Graphical Interface",
-  "position": 2,
-  "link": {
-    "type": "generated-index"
-  }
+    "label": "SwapMeet GUI",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "SwapMeet is the MobiNex desktop app for creating and managing your device network."
+    }
 }
