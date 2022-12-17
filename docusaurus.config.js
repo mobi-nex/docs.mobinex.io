@@ -44,6 +44,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-R5J74GX7XQ',
+        }
       }),
     ],
   ],
@@ -58,6 +61,7 @@ const config = {
           src: 'img/mobinex-light.png',
           srcDark: 'img/mobinex-dark.png',
           href: 'https://mobinex.io',
+          target: '_self',
         },
         items: [
           {
@@ -67,7 +71,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/mobi-nex/docs.mobinex.io',
+            href: 'https://github.com/mobi-nex/',
             label: 'GitHub',
             position: 'right',
           },

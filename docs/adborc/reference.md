@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Reference
 
-`AdbOrc` commands are organized into subcommands. There are four types of subcommands:
+*AdbOrc* commands are organized into subcommands. There are four types of subcommands:
 
 1. *System* commands
 2. *MarketMaker* commands
